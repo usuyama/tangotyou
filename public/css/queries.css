@@ -1,0 +1,32 @@
+body {
+  background-color: #e4e4e2;
+}
+.item {
+  width: 200px;
+  height: 80px;
+  margin: 5px;
+  float: left;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  box-shadow: 0 2px 1px #eee;
+  border-radius: 10px;        /* CSS3草案 */
+  -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
+  -moz-border-radius: 10px;   /* Firefox用 */
+  padding: 10px;
+}
+hr {
+  color: #eee;
+}
+.word {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.trash {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.trash > img {
+  height: 18px;
+  width: 18px;
+}

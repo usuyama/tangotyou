@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+.hero-unit {
+  padding: 36px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.hero-unit h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+}
+.hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  color: inherit;
+}
+
+.main-menu p {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.main-menu div.span4 {
+  margin-bottom: 20px;
+}
+
+div.disqus {
+  margin-top: 25px;
+}
+
+#disqus_thread h4 {
+  font-size:15px;
+}
+.clear {
+  clear: both;
+}
+}

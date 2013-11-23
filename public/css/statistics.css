@@ -1,0 +1,23 @@
+.cell {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+.correct {
+  background-color: rgb(0,161,203);
+}
+.incorrect {
+  background-color: rgb(229,64,40);
+}
+.unknown {
+  background-color: rgb(241,141,5);
+}
+
+.row {
+  margin-right: 10px;
+}

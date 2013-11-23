@@ -1,0 +1,50 @@
+# general
+*~
+*.log
+tmp
+dump
+
+# Eclipse
+.settings
+.cache
+.project
+.classpath
+.scala_dependencies
+bin
+
+# SBT
+dist
+project/boot
+project/target
+project/plugins/target
+target
+.target
+
+# Play
+logs
+RUNNING_PID
+
+.idea*
+
+# Ignore Play! working directory #
+bin
+db
+eclipse
+lib
+log
+logs
+modules
+precompiled
+project/project
+project/target
+target
+tmp
+test-result
+server.pid
+*.iml
+*.eml
+
+application.conf
+dev.conf
+
+conf/play-authenticate

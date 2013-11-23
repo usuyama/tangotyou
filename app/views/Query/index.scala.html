@@ -1,0 +1,41 @@
+@(queries: List[Query])
+
+@import helper._
+@import utils.GetTimeAgo
+@main("単語帳") {
+<script src="@routes.Assets.at("js/masonry.pkgd.min.js")"></script>
+<link href="@routes.Assets.at("css/queries.css")" rel="stylesheet">
+<div id="container">
+  @queries.map { p =>
+  <div id="@p.id" class="item">
+    <div class="word"><a href="@p.url">@p.word</a></div>
+    @GetTimeAgo.getTimeAgo(p.created_at.getTime()) from @p.site
+    <div class="trash" data-id="@p.id"><img src="@routes.Assets.at("img/trash.png")"></div>
+  </div>
+  }
+</div>
+<div class="clear"></div>
+<script>
+  $(function(){
+    var $container = $('#container');
+    $container.masonry({
+      itemSelector: '.item'
+    });
+    $('.trash').click(function() {
+      var query_id = $(this).data("id");
+      console.log(query_id);
+      $.ajax({
+        url: "@routes.QueryController.index()" + "/" + query_id,
+        type: 'DELETE',
+        success: function(data) {
+          console.log(data);
+        }
+      });
+      var container = document.querySelector('#container');
+      var msnry = new Masonry(container);
+      var item = msnry.getItem($("#" + query_id)[0]);
+      msnry.hide(new Array(item));
+    });
+  });
+</script>
+}

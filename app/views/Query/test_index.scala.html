@@ -1,0 +1,21 @@
+@(queries: List[Query])
+
+@import helper._
+@main("Query") {
+index.scala.html
+<div class="row">
+  <table>
+    <tr><td>id</td><td>user_id</td><td>word</td><td>url</td><td>site</td><td>created_at</td></tr>
+    @queries.map { p =>
+    <tr>
+        <td>@p.id</td>
+        <td>@p.user_id</td>
+        <td>@p.word</td>
+        <td>@p.url</td>
+        <td>@p.site</td>
+        <td>@p.created_at</td>
+    </tr>
+    }
+  </table>
+</div>
+}

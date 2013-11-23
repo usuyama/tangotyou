@@ -1,0 +1,91 @@
+.problem-img {
+  float: left;
+  margin: 0 15px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.answer-img {
+  float: left;
+  margin: 0 15px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.row {
+  margin-left: 0px;
+}
+
+.history-correct {
+  color: green;
+}
+.history-incorrect {
+  color: red;
+}
+.history-unknown {
+  color: orange;
+}
+.button {
+  margin-right: 10px;
+}
+.correct {
+  width: 80px;
+}
+.incorrect {
+  width: 80px;
+}
+.answer-container {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 12px;
+}
+.problem-container {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.problem-sentence {
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 12px;
+}
+
+#notify_review {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 15px;
+    color: #333333;
+}
+.button {
+  margin-right: 1px;
+}
+.history-correct {
+  color: green;
+}
+.history-incorrect {
+  color: red;
+}
+.history-unknown {
+  color: orange;
+}
+.correct {
+  width: 70px;
+}
+.incorrect {
+  width: 70px;
+}
+.answer-img {
+  float: left;
+  margin: 0 15px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+
+}

@@ -1,0 +1,11 @@
+@()
+
+@import helper._
+@main("New Query") {
+<div class="row">
+  <form action="/queries" method="POST">
+    url:  <input type="text" name="url"><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+}
